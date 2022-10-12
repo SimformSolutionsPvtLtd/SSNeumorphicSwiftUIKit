@@ -13,8 +13,8 @@ struct ContentView: View {
     
     var body: some View {
         return ZStack {
-            Spacer()
-            VStack(spacing: 50) {
+            
+            VStack(spacing: 20) {
                 
                 //Title
                 Text("Neumorphic SwiftUI").font(.title2).fontWeight(.bold).foregroundColor(.black)
@@ -22,20 +22,22 @@ struct ContentView: View {
                 SSNuemorphicView().frame(width: 150, height: 150)
                 
                 HStack {
-                    SSNuemorphicTextField(placeholder: "Password")
+                    SSNuemorphicTextField(placeholder: "Enter Name", hasTrailingImage: true, imageName: "person")
+                }
+                
+                HStack {
+                    SSNuemorphicTextField(placeholder: "Enter Password", isSecureField: true, hasTrailingImage: true, imageName: "eye")
                 }
                 
                 SSNuemorphicButton(text: "Nuemorphic Button", pressedEffect: .flat) {
                     print("Clicked")
                 }
                 
-                //Circle Button
+                //Circle Button with button stype
                 Button(action: {}) {
                     Image(systemName: "heart.fill")
                 }.buttonStyle(Circle())
-                
             }
-            Spacer()
         }
     }
 }

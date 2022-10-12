@@ -70,21 +70,35 @@ struct SSNuemorphicView: View {
 struct SSNuemorphicTextField: View {
 
     var placeholder: String
+    var isSecureField = false
+    var hasTrailingImage = false
+    var imageName: String = ""
     @State var textFieldContent: String = ""
 
     var body: some View {
         
         HStack {
-            TextField(placeholder, text: $textFieldContent).padding()
-            Image(systemName:"eye.slash")
-                .foregroundColor(.black)
-             .font(Font.body.weight(.bold))
-        }.background(
-            RoundedRectangle(cornerRadius: 30)
-                .fill(Color.white)
-                .outerShadow()
-                .innerShadow(RoundedRectangle(cornerRadius: 30))
-        ).padding()
+            
+            if isSecureField {
+                SecureField(placeholder, text: $textFieldContent).padding()
+                    .font(Font.body.weight(.bold))
+            } else {
+                TextField(placeholder, text: $textFieldContent).padding()
+                    .font(Font.body.weight(.bold))
+            }
+            
+            if hasTrailingImage {
+                Image(systemName: imageName)
+                    .foregroundColor(.black)
+            }
+            
+        }.padding(.trailing)
+            .background(
+                RoundedRectangle(cornerRadius: 30)
+                    .fill(Color.white)
+                    .innerShadow(RoundedRectangle(cornerRadius: 30))
+                    .outerShadow()
+            ).padding()
     }
 }
 
