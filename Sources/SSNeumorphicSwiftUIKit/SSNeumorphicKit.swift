@@ -54,6 +54,11 @@ public struct SSNeumorphicKit {
 
 public struct SSNuemorphicView: View {
     
+    public init(fillColor: Color = .white, cornerRadius: CGFloat = 15) {
+        self.fillColor = fillColor
+        self.cornerRadius = cornerRadius
+    }
+    
     var fillColor: Color = .white
     var cornerRadius : CGFloat = 15
     
@@ -68,7 +73,15 @@ public struct SSNuemorphicView: View {
 }
 
 public struct SSNuemorphicTextField: View {
-
+    
+    public init(placeholder: String, isSecureField: Bool = false, hasTrailingImage: Bool = false, imageName: String = "", textFieldContent: String = "") {
+        self.placeholder = placeholder
+        self.isSecureField = isSecureField
+        self.hasTrailingImage = hasTrailingImage
+        self.imageName = imageName
+        self.textFieldContent = textFieldContent
+    }
+    
     var placeholder: String
     var isSecureField = false
     var hasTrailingImage = false
@@ -104,6 +117,12 @@ public struct SSNuemorphicTextField: View {
 
 public struct SSNuemorphicButton: View {
     
+    public init(text: String = "", pressedEffect: ButtonPressedEffect = .none, action: @escaping () -> Void) {
+        self.text = text
+        self.pressedEffect = pressedEffect
+        self.action = action
+    }
+
     var text: String = ""
     var pressedEffect:ButtonPressedEffect = .none
     var action: () -> Void
