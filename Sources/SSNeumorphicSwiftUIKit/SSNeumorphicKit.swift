@@ -52,12 +52,12 @@ public struct SSNeumorphicKit {
     
 }
 
-struct SSNuemorphicView: View {
+public struct SSNuemorphicView: View {
     
     var fillColor: Color = .white
     var cornerRadius : CGFloat = 15
     
-    var body: some View {
+    public var body: some View {
         
         //Rectangle
         RoundedRectangle(cornerRadius: cornerRadius).fill(fillColor)
@@ -67,7 +67,7 @@ struct SSNuemorphicView: View {
     }
 }
 
-struct SSNuemorphicTextField: View {
+public struct SSNuemorphicTextField: View {
 
     var placeholder: String
     var isSecureField = false
@@ -75,7 +75,7 @@ struct SSNuemorphicTextField: View {
     var imageName: String = ""
     @State var textFieldContent: String = ""
 
-    var body: some View {
+    public var body: some View {
         
         HStack {
             
@@ -102,13 +102,13 @@ struct SSNuemorphicTextField: View {
     }
 }
 
-struct SSNuemorphicButton: View {
+public struct SSNuemorphicButton: View {
     
     var text: String = ""
     var pressedEffect:ButtonPressedEffect = .none
     var action: () -> Void
 
-    var body: some View {
+    public var body: some View {
     
         //Button
         Button(action: action) {
