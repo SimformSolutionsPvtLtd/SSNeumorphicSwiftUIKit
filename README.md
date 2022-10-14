@@ -6,7 +6,10 @@ SSNeumorphicSwiftUIKit is to build a Neumorphism view, button, and text filed in
 [![Build Status][travis-image]][travis-url]
 [![License][license-image]][license-url]
 
-<img src="">
+<img src="https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit/blob/feature/CarthageSupport/images/light_mode.png">
+
+<img src="https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit/blob/feature/CarthageSupport/images/dark_mode.png">
+
 
 # Features!
 - Create Neumorphic view, button and text field using the SSNeumorphicSwiftUIKit
@@ -20,14 +23,24 @@ To run the example project, clone the repo, and run. (Resolve/Update package ver
 Requirements .iOS(.v13)
 
 # Installation
+
+ **CocoaPods**
+    You can use CocoaPods to install SSNeumorphicView by adding it to your Podfile:
+
+       use_frameworks!
+       pod 'SSNeumorphicSwiftUIKit'
+       
  **Swift Package Manager**
-In Xcode, open your project and navigate to File → Swift Packages → Add Package Dependency.
-Paste the repository URL (https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit/) and click Next.
+    In Xcode, open your project and navigate to File → Swift Packages → Add Package Dependency:
+    
+        Paste the repository URL (https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit/) and click Next.
+        
 For Rules, select version.
+
 Click Finish.
 
  **Swift Package**
- .package(url: "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit/")
+    .package(url: "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit/")
 
 ## TODO
 
