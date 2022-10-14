@@ -54,18 +54,20 @@ public struct SSNeumorphicKit {
 
 public struct SSNuemorphicView: View {
     
-    public init(fillColor: Color = .white, cornerRadius: CGFloat = 15) {
+    @Environment(\.colorScheme) var colorScheme
+
+    public init(fillColor: Color = Color.Neumorphic.main, cornerRadius: CGFloat = 15) {
         self.fillColor = fillColor
         self.cornerRadius = cornerRadius
     }
     
-    var fillColor: Color = .white
+    var fillColor: Color = Color.Neumorphic.main
     var cornerRadius : CGFloat = 15
     
     public var body: some View {
         
         //Rectangle
-        RoundedRectangle(cornerRadius: cornerRadius).fill(fillColor)
+        RoundedRectangle(cornerRadius: cornerRadius).fill(Color.Neumorphic.main)
         
             .outerShadow()
             .innerShadow(RoundedRectangle(cornerRadius: cornerRadius))
@@ -74,6 +76,8 @@ public struct SSNuemorphicView: View {
 
 public struct SSNuemorphicTextField: View {
     
+    @Environment(\.colorScheme) var colorScheme
+
     public init(placeholder: String, isSecureField: Bool = false, hasTrailingImage: Bool = false, imageName: String = "", textFieldContent: String = "") {
         self.placeholder = placeholder
         self.isSecureField = isSecureField
@@ -102,13 +106,13 @@ public struct SSNuemorphicTextField: View {
             
             if hasTrailingImage {
                 Image(systemName: imageName)
-                    .foregroundColor(.black)
+                    .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
             }
             
         }.padding(.trailing)
             .background(
                 RoundedRectangle(cornerRadius: 30)
-                    .fill(Color.white)
+                    .fill(Color.Neumorphic.main)
                     .innerShadow(RoundedRectangle(cornerRadius: 30))
                     .outerShadow()
             ).padding()
@@ -116,6 +120,8 @@ public struct SSNuemorphicTextField: View {
 }
 
 public struct SSNuemorphicButton: View {
+    
+    @Environment(\.colorScheme) var colorScheme
     
     public init(text: String = "", pressedEffect: ButtonPressedEffect = .none, action: @escaping () -> Void) {
         self.text = text
@@ -131,9 +137,10 @@ public struct SSNuemorphicButton: View {
     
         //Button
         Button(action: action) {
-            Text(text).foregroundColor(.black)
+            Text(text).foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                 .fontWeight(.bold).frame(width: 300, height: 20)
         }
         .buttonStyle(Capsule(), padding: 15, pressedEffect: pressedEffect)
     }
 }
+

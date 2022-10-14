@@ -10,45 +10,24 @@ SSNeumorphicSwiftUIKit is to build a Neumorphism view, button, and text filed in
 
 # Features!
 - Create Neumorphic view, button and text field using the SSNeumorphicSwiftUIKit
+- Dark/Light mode support
 
 ## Example
 
 To run the example project, clone the repo, and run. (Resolve/Update package version if needed).
 
 # Requirements
-- iOS 10.0+
-- Xcode 9+
+Requirements .iOS(.v13)
 
 # Installation
- **SPM**
-    You can use add the swift package dependencies to your project by url "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit"
+ **Swift Package Manager**
+In Xcode, open your project and navigate to File → Swift Packages → Add Package Dependency.
+Paste the repository URL (https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit/) and click Next.
+For Rules, select version.
+Click Finish.
 
-# Usage example
-
-   <img src="">
- 
-Import Neumorphic package to your view.
-        
-        import SSNeumorphicSwiftUIKit
-
-Create NeumorphicView with the outer shadow.
-
- <img src="" width="40%">
-
-        
-Create neumorphic text field with the Inner shadow.
-
-<img src="" width="40%">
- 
-
-Create neumorphic button with the Outer shadow.
-
-<img src="" width="40%">
- 
-    
-Create neumorphic rounded button with the inner shadow.
-
-   <img src="" width="40%">
+ **Swift Package**
+ .package(url: "https://github.com/SimformSolutionsPvtLtd/SSNeumorphicSwiftUIKit/")
 
 ## TODO
 

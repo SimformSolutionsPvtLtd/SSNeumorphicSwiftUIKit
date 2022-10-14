@@ -11,22 +11,18 @@
 		7B1FD65928F457AE0078624B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1FD65828F457AE0078624B /* ContentView.swift */; };
 		7B1FD65B28F457B00078624B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1FD65A28F457B00078624B /* Assets.xcassets */; };
 		7B1FD65E28F457B00078624B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B1FD65D28F457B00078624B /* Preview Assets.xcassets */; };
-		7BCD2CC028F586FB00C7935F /* SSNeumorphicLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCD2CBF28F586FB00C7935F /* SSNeumorphicLayer.swift */; };
-		7BFF45CA28F54FF000B94E21 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF45C328F54FF000B94E21 /* ButtonStyle.swift */; };
-		7BFF45CB28F54FF000B94E21 /* SSNeumorphicKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF45C428F54FF000B94E21 /* SSNeumorphicKit.swift */; };
-		7BFF45D028F54FF000B94E21 /* DynamicToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFF45C928F54FF000B94E21 /* DynamicToggleStyle.swift */; };
+		9E05FFE47565E0C78EA076D7 /* Pods_SSNeumorphicView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127FC55150335840538C1CD7 /* Pods_SSNeumorphicView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		127FC55150335840538C1CD7 /* Pods_SSNeumorphicView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSNeumorphicView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1FD65328F457AE0078624B /* SSNeumorphicView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SSNeumorphicView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1FD65628F457AE0078624B /* SSNeumorphicViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNeumorphicViewApp.swift; sourceTree = "<group>"; };
 		7B1FD65828F457AE0078624B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7B1FD65A28F457B00078624B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B1FD65D28F457B00078624B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7BCD2CBF28F586FB00C7935F /* SSNeumorphicLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSNeumorphicLayer.swift; sourceTree = "<group>"; };
-		7BFF45C328F54FF000B94E21 /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
-		7BFF45C428F54FF000B94E21 /* SSNeumorphicKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSNeumorphicKit.swift; sourceTree = "<group>"; };
-		7BFF45C928F54FF000B94E21 /* DynamicToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicToggleStyle.swift; sourceTree = "<group>"; };
+		9A6F64CC0314064602210475 /* Pods-SSNeumorphicView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSNeumorphicView.release.xcconfig"; path = "Target Support Files/Pods-SSNeumorphicView/Pods-SSNeumorphicView.release.xcconfig"; sourceTree = "<group>"; };
+		A366A4364C478EA65B27019F /* Pods-SSNeumorphicView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSNeumorphicView.debug.xcconfig"; path = "Target Support Files/Pods-SSNeumorphicView/Pods-SSNeumorphicView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E05FFE47565E0C78EA076D7 /* Pods_SSNeumorphicView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +42,8 @@
 			children = (
 				7B1FD65528F457AE0078624B /* SSNeumorphicView */,
 				7B1FD65428F457AE0078624B /* Products */,
+				D1E7A7794F528FB6DEE968C4 /* Pods */,
+				F56261318F17B5FC55B204A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +58,6 @@
 		7B1FD65528F457AE0078624B /* SSNeumorphicView */ = {
 			isa = PBXGroup;
 			children = (
-				7BFF45C228F54FF000B94E21 /* Classes */,
 				7B1FD65628F457AE0078624B /* SSNeumorphicViewApp.swift */,
 				7B1FD65828F457AE0078624B /* ContentView.swift */,
 				7B1FD65A28F457B00078624B /* Assets.xcassets */,
@@ -76,15 +74,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		7BFF45C228F54FF000B94E21 /* Classes */ = {
+		D1E7A7794F528FB6DEE968C4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7BFF45C328F54FF000B94E21 /* ButtonStyle.swift */,
-				7BFF45C428F54FF000B94E21 /* SSNeumorphicKit.swift */,
-				7BFF45C928F54FF000B94E21 /* DynamicToggleStyle.swift */,
-				7BCD2CBF28F586FB00C7935F /* SSNeumorphicLayer.swift */,
+				A366A4364C478EA65B27019F /* Pods-SSNeumorphicView.debug.xcconfig */,
+				9A6F64CC0314064602210475 /* Pods-SSNeumorphicView.release.xcconfig */,
 			);
-			path = Classes;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F56261318F17B5FC55B204A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				127FC55150335840538C1CD7 /* Pods_SSNeumorphicView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B1FD66128F457B00078624B /* Build configuration list for PBXNativeTarget "SSNeumorphicView" */;
 			buildPhases = (
+				2F936840DD904034170D870C /* [CP] Check Pods Manifest.lock */,
 				7B1FD64F28F457AE0078624B /* Sources */,
 				7B1FD65028F457AE0078624B /* Frameworks */,
 				7B1FD65128F457AE0078624B /* Resources */,
+				2FC3438B7B9A49E0A4306C1C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,15 +158,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F936840DD904034170D870C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SSNeumorphicView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FC3438B7B9A49E0A4306C1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSNeumorphicView/Pods-SSNeumorphicView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SSNeumorphicView/Pods-SSNeumorphicView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SSNeumorphicView/Pods-SSNeumorphicView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B1FD64F28F457AE0078624B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BFF45D028F54FF000B94E21 /* DynamicToggleStyle.swift in Sources */,
-				7BFF45CB28F54FF000B94E21 /* SSNeumorphicKit.swift in Sources */,
-				7BFF45CA28F54FF000B94E21 /* ButtonStyle.swift in Sources */,
-				7BCD2CC028F586FB00C7935F /* SSNeumorphicLayer.swift in Sources */,
 				7B1FD65928F457AE0078624B /* ContentView.swift in Sources */,
 				7B1FD65728F457AE0078624B /* SSNeumorphicViewApp.swift in Sources */,
 			);
@@ -285,6 +329,7 @@
 		};
 		7B1FD66228F457B00078624B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A366A4364C478EA65B27019F /* Pods-SSNeumorphicView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +358,7 @@
 		};
 		7B1FD66328F457B00078624B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6F64CC0314064602210475 /* Pods-SSNeumorphicView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
